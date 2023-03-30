@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-
-
-    <body>
-        <h1>Live Streaming</h1>
-        <div>
-
-            <img src="{{url_for('video')}}" width="50%"/>
-        </div>
-
-    </body>
-
-
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Hello page</h1>
+    <!-- <p>{{content}}</p> -->
+    <!-- we can also able to type python inside html like -->
+    <!-- {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+            <p>{{x}}</p>
+        {% endif %}
+    {% endfor %} -->
+    {% for x in context %}
+        <p>{{x}}</p>
+    {% endfor %}
+</body>
 </html>
